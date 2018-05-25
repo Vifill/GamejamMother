@@ -39,3 +39,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Gamejam Mother/Temp/
+Gamejam Mother/.vs/
