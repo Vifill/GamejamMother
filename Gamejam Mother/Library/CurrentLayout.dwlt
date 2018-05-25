@@ -109,7 +109,11 @@ MonoBehaviour:
   m_MinSize: {x: 681, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 63
+=======
+  controlID: 89
+>>>>>>> 0eb15eecac2320b0627c14f1d73c6ec5d808c574
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +137,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 64
+=======
+  controlID: 103
+>>>>>>> 0eb15eecac2320b0627c14f1d73c6ec5d808c574
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +165,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 65
+=======
+  controlID: 104
+>>>>>>> 0eb15eecac2320b0627c14f1d73c6ec5d808c574
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -367,7 +379,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: d0f4ffff00000000
+=======
+    m_ExpandedIDs: daf4ffff00000000
+>>>>>>> 0eb15eecac2320b0627c14f1d73c6ec5d808c574
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -580,14 +596,24 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/_Scenes
   m_LastFoldersGridSize: 16
+<<<<<<< HEAD
   m_LastProjectPath: C:\Nord\GameJam_SingleMoms\Gamejam Mother
+=======
+  m_LastProjectPath: D:\UnityProjects\GamejamMother\Gamejam Mother
+>>>>>>> 0eb15eecac2320b0627c14f1d73c6ec5d808c574
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 6a320000
     m_LastClickedID: 12906
     m_ExpandedIDs: 00000000fa2f000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: be2f0000
+    m_LastClickedID: 12222
+    m_ExpandedIDs: 00000000be2f000000ca9a3bffffff7f
+>>>>>>> 0eb15eecac2320b0627c14f1d73c6ec5d808c574
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -615,7 +641,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000fa2f0000
+=======
+    m_ExpandedIDs: 00000000be2f0000
+>>>>>>> 0eb15eecac2320b0627c14f1d73c6ec5d808c574
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
