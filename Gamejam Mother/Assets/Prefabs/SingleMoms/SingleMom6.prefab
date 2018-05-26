@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4339ab71165ada342b397f3cefede026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickLogic: {fileID: 11400000, guid: 644cd2ab651f1cb4f96b14d1caa4e9d8, type: 2}
+  ClickLogic: {fileID: 11400000, guid: b0b1ba940f480db4f8b5f6488260cb03, type: 2}
 --- !u!114 &114253141953170960
 MonoBehaviour:
   m_ObjectHideFlags: 1

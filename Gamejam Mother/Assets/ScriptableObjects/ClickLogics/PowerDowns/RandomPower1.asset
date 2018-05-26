@@ -14,3 +14,5 @@ MonoBehaviour:
   UsesCoroutine: 1
   PotentialClickLogics:
   - {fileID: 11400000, guid: 4175cdcaabdf5684b9ac0821ece287cb, type: 2}
+  - {fileID: 11400000, guid: 2f69ff11eee590848ab5335ef19a4993, type: 2}
+  - {fileID: 11400000, guid: 0de3e8a1e240aad4485fcb3c3552142d, type: 2}

@@ -73,3 +73,6 @@ MonoBehaviour:
   - PopupPrefab: {fileID: 1654655800462322, guid: 04049f827200ee94c989246fc6589686,
       type: 2}
     ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1723291719580258, guid: d5cb6d7a7b478674cb46c295aeec5ec8,
+      type: 2}
+    ChanceOfSpawn: 100

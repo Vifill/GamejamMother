@@ -13,13 +13,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UsesCoroutine: 0
   CursorImages:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2800000, guid: e5b55f015d6daa34698c8944661c6cd2, type: 3}
+  - {fileID: 2800000, guid: 246bf8930b106054c95aebd26a1768d9, type: 3}
+  - {fileID: 2800000, guid: c61b17059cf24854395e2c9dc708addc, type: 3}
+  - {fileID: 2800000, guid: 780f137cf2eec8b4b915b23d479cb110, type: 3}
+  - {fileID: 2800000, guid: f20b5a8a208e2824b8f70f4f21b9837d, type: 3}
+  - {fileID: 2800000, guid: 1110a881a0f44864dad983d2fb0a2dae, type: 3}
+  - {fileID: 2800000, guid: 135a1c2fd506e504c93f8f6238a32f61, type: 3}
+  - {fileID: 2800000, guid: 8be9471d29caa1149b905f7d2ddfd022, type: 3}
+  - {fileID: 2800000, guid: 8a40cec64388d1f4e879558e09ca1c11, type: 3}
+  - {fileID: 2800000, guid: a744419cd0965444a97a06c98c3c8f8f, type: 3}
