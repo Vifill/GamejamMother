@@ -8,7 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9342e4acd955a747868cdcbf0b66a92, type: 3}
-  m_Name: New Change Mouse Cursor
+  m_Script: {fileID: 11500000, guid: fd01f5fbbec43c549b0c109ef2a082ce, type: 3}
+  m_Name: AutoClicker1
   m_EditorClassIdentifier: 
-  CursorImages: []
+  UsesCoroutine: 1
+  NumberOfAutomaticClicks: 7
+  TimeBetweenCloses: 0.05
