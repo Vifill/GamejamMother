@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa1b55cc5ea904c4c832f0b238aa5e03, type: 3}
   m_Name: RandomPower1
   m_EditorClassIdentifier: 
-  UsesCoroutine: 0
+  UsesCoroutine: 1
   PotentialClickLogics:
-  - {fileID: 11400000, guid: 644cd2ab651f1cb4f96b14d1caa4e9d8, type: 2}
+  - {fileID: 11400000, guid: 4175cdcaabdf5684b9ac0821ece287cb, type: 2}
