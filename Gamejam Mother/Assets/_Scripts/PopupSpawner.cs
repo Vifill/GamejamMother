@@ -10,28 +10,34 @@ public class PopupSpawner : MonoBehaviour
 {
     public SpawnModelConfig SpawnModelConfig;
     public InitialSpawnConfig InitialSpawnConfig;
+    public RectTransform PopUpSpawn;
 
     private SpawnModel CurrentSpawnModel;
     private List<PopupChanceModel> CurrentPopupChanceModels;
     private Queue<SpawnModelTimerModel> SpawnModelQueue;
     private Canvas Canvas;
-    public RectTransform PopUpSpawn;
     private Image Background;
     private AudioManager AudioManager;
+    private bool IsInitialized;
 
     public List<GameObject> SpawnedPopups = new List<GameObject>();
 
     public void Initialize()
     {
-        Canvas = FindObjectOfType<Canvas>();
-        AudioManager = FindObjectOfType<AudioManager>();
-        Background = FindObjectOfType<Canvas>().transform.GetChild(0).GetComponent<Image>();
-        SpawnModelQueue = new Queue<SpawnModelTimerModel>(SpawnModelConfig.TimeModels);
-        AudioManager.StartGameAudio();
+        if (!IsInitialized)
+        {
+            IsInitialized = true;
+            Canvas = FindObjectOfType<Canvas>();
+            AudioManager = FindObjectOfType<AudioManager>();
+            Background = FindObjectOfType<Canvas>().transform.GetChild(0).GetComponent<Image>();
+            SpawnModelQueue = new Queue<SpawnModelTimerModel>(SpawnModelConfig.TimeModels);
+            AudioManager.StartGameAudio();
 
-        GameController.CanClick = false;
-        StartCoroutine(PopulateInitialPopups());
-        GameController.CanClick = true;
+            GameController.CanClick = false;
+            StartCoroutine(PopulateInitialPopups());
+            GameController.CanClick = true;
+        }
+        
     }
 
     private IEnumerator PopulateInitialPopups()
