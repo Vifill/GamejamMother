@@ -12,13 +12,9 @@ MonoBehaviour:
   m_Name: SpawnConfig
   m_EditorClassIdentifier: 
   TimeModels:
-  - SpawnModel: {fileID: 0}
-    TimeToNextModel: 0
-  - SpawnModel: {fileID: 0}
-    TimeToNextModel: 0
-  - SpawnModel: {fileID: 0}
-    TimeToNextModel: 0
-  - SpawnModel: {fileID: 0}
-    TimeToNextModel: 0
-  - SpawnModel: {fileID: 0}
-    TimeToNextModel: 0
+  - SpawnModel: {fileID: 11400000, guid: 4e7fab6e8054268459cbf18c5a197348, type: 2}
+    TimeToNextModel: 10
+  - SpawnModel: {fileID: 11400000, guid: f592dde8808c92a4a8be64e1bcb4aba5, type: 2}
+    TimeToNextModel: 10
+  - SpawnModel: {fileID: 11400000, guid: 668068a77fc5ecd48ac7c8aac1b4d27c, type: 2}
+    TimeToNextModel: 10
