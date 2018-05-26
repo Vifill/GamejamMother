@@ -8,9 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa1b55cc5ea904c4c832f0b238aa5e03, type: 3}
-  m_Name: RandomPower1
+  m_Script: {fileID: 11500000, guid: 42448551a36e2f646a3daaf94bb658a2, type: 3}
+  m_Name: Shaking1
   m_EditorClassIdentifier: 
   UsesCoroutine: 1
-  PotentialClickLogics:
-  - {fileID: 11400000, guid: 4175cdcaabdf5684b9ac0821ece287cb, type: 2}
+  TimeToShake: 5
+  MoveSpeed: 4
