@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2aa44523df77494bbbe608022316939, type: 3}
-  m_Name: Model1
+  m_Name: Model3
   m_EditorClassIdentifier: 
-  SpawnRate: 5
+  SpawnRate: 1
   PopupChanceModel:
   - PopupPrefab: {fileID: 1926639530020768, guid: 1757d381e033b304398075dd49ba2655,
       type: 2}
