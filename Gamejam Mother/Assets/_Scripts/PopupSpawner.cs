@@ -20,7 +20,9 @@ public class PopupSpawner : MonoBehaviour
         Canvas = FindObjectOfType<Canvas>();
         SpawnModelQueue = new Queue<SpawnModelTimerModel>(SpawnModelConfig.TimeModels);
 
+        GameController.CanClick = false;
         StartCoroutine(PopulateInitialPopups());
+        GameController.CanClick = true;
     }
 
     private IEnumerator PopulateInitialPopups()
