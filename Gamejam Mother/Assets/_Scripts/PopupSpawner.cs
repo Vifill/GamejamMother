@@ -15,7 +15,7 @@ public class PopupSpawner : MonoBehaviour
     private Queue<SpawnModelTimerModel> SpawnModelQueue;
     private Canvas Canvas;
 
-    private void Start()
+    public void Initialize()
     {
         Canvas = FindObjectOfType<Canvas>();
         SpawnModelQueue = new Queue<SpawnModelTimerModel>(SpawnModelConfig.TimeModels);
@@ -37,7 +37,7 @@ public class PopupSpawner : MonoBehaviour
         }
     }
 
-    private void StartGame()
+    public void StartGame()
     {
         StartCoroutine(SpawnModelSwitchCoroutine());
         StartCoroutine(SpawnCoroutine());
