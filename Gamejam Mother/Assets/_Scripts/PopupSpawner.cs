@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class PopupSpawner : MonoBehaviour
@@ -13,7 +14,7 @@ public class PopupSpawner : MonoBehaviour
     private SpawnModel CurrentSpawnModel;
     private List<PopupChanceModel> CurrentPopupChanceModels;
     private Queue<SpawnModelTimerModel> SpawnModelQueue;
-    private Canvas Canvas;
+    private Image Background;
     private AudioManager AudioManager;
 
     public List<GameObject> SpawnedPopups = new List<GameObject>();
@@ -21,7 +22,7 @@ public class PopupSpawner : MonoBehaviour
     public void Initialize()
     {
         AudioManager = FindObjectOfType<AudioManager>();
-        Canvas = FindObjectOfType<Canvas>();
+        Background = FindObjectOfType<Canvas>().transform.GetChild(0).GetComponent<Image>();
         SpawnModelQueue = new Queue<SpawnModelTimerModel>(SpawnModelConfig.TimeModels);
         AudioManager.StartGameAudio();
 
@@ -101,15 +102,15 @@ public class PopupSpawner : MonoBehaviour
     private void SpawnPopup(GameObject pPopupPrefab)
     {
         Rect size = pPopupPrefab.GetComponent<RectTransform>().rect;
-        var popup = Instantiate(pPopupPrefab, Canvas.transform);
+        var popup = Instantiate(pPopupPrefab, Background.transform);
         popup.transform.localPosition = GetSpawnLocation(size);
         GameController.AddPopup(popup);
     }
 
     private Vector2 GetSpawnLocation(Rect pPrefabRect)
     {
-        var canvasRect = Canvas.GetComponent<RectTransform>().rect;
-        Vector2 limits = new Vector2((canvasRect.width - pPrefabRect.width)/2, (canvasRect.height - pPrefabRect.height)/2);
+        var backgroundRect = Background.GetComponent<RectTransform>().rect;
+        Vector2 limits = new Vector2((backgroundRect.width - pPrefabRect.width)/2, (backgroundRect.height - pPrefabRect.height)/2);
         return new Vector2(Random.Range(-limits.x, limits.x), Random.Range(-limits.y, limits.y));
     }
 }
