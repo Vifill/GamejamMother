@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PopUpWindowManager : MonoBehaviour 
+public class PopUpWindowManager : MonoBehaviour
 {
     public OnClickLogic ClickLogic;
 
@@ -16,7 +16,7 @@ public class PopUpWindowManager : MonoBehaviour
 
     private void OnClose()
     {
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
     }
 
     public void AdButtonClick()
