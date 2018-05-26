@@ -114,6 +114,7 @@ public class PopupSpawner : MonoBehaviour
         var popup = Instantiate(pPopupPrefab, PopUpSpawn);
         popup.transform.localPosition = GetSpawnLocation(size);
         GameController.AddPopup(popup);
+        AudioManager.PlaySFX(AudioManager.Sounds.BalloonSound);
     }
 
     private Vector2 GetSpawnLocation(Rect pPrefabRect)
