@@ -38,10 +38,18 @@ public class MemoryUIManager : MonoBehaviour
 
     private IEnumerator BarLerp()
     {
-        while (CurrentPercentage < TargetPercentage)
+        while (Mathf.RoundToInt(CurrentPercentage) != TargetPercentage)
         {
             //CurrentPercentage = Mathf.Lerp(CurrentPercentage, TargetPercentage, LerpSpeed * Time.deltaTime);
-            CurrentPercentage += LerpSpeed * Time.deltaTime;
+            if (TargetPercentage > CurrentPercentage)
+            {
+                CurrentPercentage += LerpSpeed * Time.deltaTime;
+            }
+            else
+            {
+                CurrentPercentage -= LerpSpeed * Time.deltaTime;
+            }
+            
             BarFill.fillAmount = CurrentPercentage/100;
             PercentageText.text = Mathf.RoundToInt(CurrentPercentage) + "%";
             yield return null;
