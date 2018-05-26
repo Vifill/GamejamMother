@@ -3,39 +3,88 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.Audio;
+using System;
 
 public class AudioManager : MonoBehaviour 
 {
     public List<AudioClip> AudioClips = new List<AudioClip>();
     private List<AudioSource> Sources = new List<AudioSource>();
+    private Dictionary<Sounds, AudioClip> Clips = new Dictionary<Sounds, AudioClip>();
     private AudioSource MusicSource;
     public AudioMixerGroup SfxMixer;
     public AudioMixerGroup MusicMixer;
 
     private void Start() 
 	{
+        int clipsIndex = 0;
         foreach (var clip in AudioClips)
         {
             var aSource = gameObject.AddComponent<AudioSource>();
             Sources.Add(aSource);
-            aSource.clip = clip;
-        }
-        PlayMainSong();
-	}
 
-    private void PlayMainSong()
-    {
-        MusicSource = Sources.FirstOrDefault();
-        MusicSource.outputAudioMixerGroup = MusicMixer;
-        MusicSource.Play();
-        MusicSource.loop = true;
+
+            Clips.Add((Sounds)clipsIndex, clip);
+            clipsIndex++;
+
+        }
+        PlaySFX(Sounds.StartUpSound);
     }
 
-    public void PlaySFX(AudioClip pAudioClip)
+    public void StartGameAudio()
     {
-        var availableSource = Sources.Where(a => !a.isPlaying).FirstOrDefault();
-        availableSource.outputAudioMixerGroup = SfxMixer;
-        availableSource.PlayOneShot(pAudioClip);
+        StartCoroutine(StartingGame());
+    }
+
+    private IEnumerator StartingGame()
+    {
+        var aErrorSource = gameObject.AddComponent<AudioSource>();
+        aErrorSource.outputAudioMixerGroup = SfxMixer;
+        float time = 0;
+        float interval = 0;
+        while (time <= 3)
+        {
+            time += Time.deltaTime;
+            interval += Time.deltaTime;
+            Debug.Log(time);
+            if (interval >= 0.1f)
+            {
+                aErrorSource.PlayOneShot(Clips[Sounds.ErrorSound]);
+                interval = 0;
+            }
+            yield return null;
+        }
+
+        var aSource = Sources.Where(a => !a.isPlaying).FirstOrDefault();
+        aSource.outputAudioMixerGroup = MusicMixer;
+        aSource.PlayOneShot(Clips[Sounds.ComputerErrorSong]);
+        aSource.loop = true;
+        MusicSource = aSource;
+    }
+
+    public void PlaySFX(Sounds pSoundEnum)
+    {
+        var availableSource = Sources.Where(a => !a.isPlaying).ToList();
+        if (availableSource.Any())
+        {
+            var source = availableSource.FirstOrDefault();
+            source.outputAudioMixerGroup = SfxMixer;
+            source.PlayOneShot(Clips[pSoundEnum]);
+        }
+        else
+        {
+            var newSource = gameObject.AddComponent<AudioSource>();
+            StartCoroutine(RemoveExtraAudioSource(newSource));
+        }
+        
+    }
+
+    private IEnumerator RemoveExtraAudioSource(AudioSource pSource)
+    {
+        while (pSource.isPlaying)
+        {
+            yield return null;
+        }
+        Destroy(pSource); 
     }
 
     /// <summary>
@@ -48,7 +97,7 @@ public class AudioManager : MonoBehaviour
         StartCoroutine(PitchMusic(pSlowTime, pPitch));
     }
 
-    private IEnumerator PitchMusic(float pSlowTime, float pPitch)
+    public IEnumerator PitchMusic(float pSlowTime, float pPitch)
     {
         float time = 0;
         MusicSource.pitch = pPitch;
@@ -58,5 +107,17 @@ public class AudioManager : MonoBehaviour
             yield return null;
         }
         MusicSource.pitch = 1;
+    }
+
+    public enum Sounds
+    {
+        ComputerErrorSong,
+        ShutDownSound,
+        StartUpSound,
+        MouseClickDown,
+        MouseClickUp,
+        DialUp,
+        ErrorSound,
+        BalloonSound
     }
 }

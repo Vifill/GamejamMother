@@ -55,10 +55,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d8cfb1a5b9ff938409fa42db8cd4dda5, type: 3}
   - {fileID: 8300000, guid: e99ba8d44801874488c2d81b5e851000, type: 3}
   - {fileID: 8300000, guid: 4788933f88abd5a4785ab1f80f02335f, type: 3}
-  - {fileID: 8300000, guid: a29697e071d20ef44bc8dcda6dca1b76, type: 3}
   - {fileID: 8300000, guid: bd1072035851bf7419b69eaf3cf560c3, type: 3}
   - {fileID: 8300000, guid: a30f6e0a57e21eb458e989c49dbee7b0, type: 3}
   - {fileID: 8300000, guid: d49f9d7348a5adb4ca3ccee002d89de5, type: 3}
+  - {fileID: 8300000, guid: d7032605f661cb04393bf1139ed71945, type: 3}
+  - {fileID: 8300000, guid: 6a33cd4742dde3741bdbeb7572c407b5, type: 3}
   SfxMixer: {fileID: 243590319271034222, guid: e07130d55f6a5cd4881fc63b922287c4, type: 2}
   MusicMixer: {fileID: 243087039707816434, guid: e07130d55f6a5cd4881fc63b922287c4,
     type: 2}

@@ -14,13 +14,16 @@ public class PopupSpawner : MonoBehaviour
     private List<PopupChanceModel> CurrentPopupChanceModels;
     private Queue<SpawnModelTimerModel> SpawnModelQueue;
     private Canvas Canvas;
+    private AudioManager AudioManager;
 
     public List<GameObject> SpawnedPopups = new List<GameObject>();
 
     public void Initialize()
     {
+        AudioManager = FindObjectOfType<AudioManager>();
         Canvas = FindObjectOfType<Canvas>();
         SpawnModelQueue = new Queue<SpawnModelTimerModel>(SpawnModelConfig.TimeModels);
+        AudioManager.StartGameAudio();
 
         GameController.CanClick = false;
         StartCoroutine(PopulateInitialPopups());
