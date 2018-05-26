@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.Audio;
-using System;
 
 public class AudioManager : MonoBehaviour 
 {
@@ -13,7 +12,7 @@ public class AudioManager : MonoBehaviour
     public AudioMixerGroup SfxMixer;
     public AudioMixerGroup MusicMixer;
 
-	private void Start() 
+    private void Start() 
 	{
         foreach (var clip in AudioClips)
         {
