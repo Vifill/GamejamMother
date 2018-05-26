@@ -16,3 +16,60 @@ MonoBehaviour:
   - PopupPrefab: {fileID: 1926639530020768, guid: 1c31a8e65b637d347a2e2548a600b775,
       type: 2}
     ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1190023575455770, guid: 55a76f5bf56d4b548a8929eae452303f,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1049509483003548, guid: 58a8d2e04e13758488e4103369e43562,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1654655800462322, guid: 04049f827200ee94c989246fc6589686,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1622411764791950, guid: 11f905f4481d3374387246c19bbe335a,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1656821973117768, guid: 6cc57f5f02f98ca42aabbc54e181ec96,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1903489657944838, guid: b09d8efd09e9603438c56aada928d376,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1076898002398312, guid: d91b88c8fb6834142bbcd1140e05ed8c,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1973604066173654, guid: 01a5872982aa68a49b6d73b224582824,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1939411515090764, guid: 997b2aa8807e7ea4291482edffb305c3,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1939411515090764, guid: 997b2aa8807e7ea4291482edffb305c3,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1578652782967336, guid: ac688585958f1e449a06be8e137e3654,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1939411515090764, guid: 997b2aa8807e7ea4291482edffb305c3,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1410782792754140, guid: 81e9469b0e6e7464e9a26d1e09189563,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1715710123773450, guid: 2f412702d1b5352418863d20c9d1ecdc,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1603616856287252, guid: 9340b0d88a0d56a4998a6391848aff9d,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1578652782967336, guid: ac688585958f1e449a06be8e137e3654,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1469299105380196, guid: dfabcbd6d20332947820ae982209664c,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1622411764791950, guid: 11f905f4481d3374387246c19bbe335a,
+      type: 2}
+    ChanceOfSpawn: 100
+  - PopupPrefab: {fileID: 1654655800462322, guid: 04049f827200ee94c989246fc6589686,
+      type: 2}
+    ChanceOfSpawn: 100
