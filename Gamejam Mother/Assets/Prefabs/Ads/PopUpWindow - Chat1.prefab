@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 222710362212711300}
   - component: {fileID: 114367014511587644}
   - component: {fileID: 114605661657375510}
+  - component: {fileID: 114848787539970450}
   m_Layer: 5
   m_Name: X Button
   m_TagString: Untagged
@@ -366,6 +367,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114367014511587644}
   m_OnClick:
     m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114848787539970450
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1881599063423380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a43b5a2d1d4cd45b6375d7ab8ea496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonDownEvent:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114297845860006306}
         m_MethodName: CloseWindow
@@ -378,7 +395,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114918595568843556
 MonoBehaviour:
