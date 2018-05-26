@@ -2,18 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PopUpWindowManager : MonoBehaviour 
 {
-	private void Start() 
-	{
-		
-	}
-	
-	private void Update() 
-	{
-		
-	}
+    public OnClickLogic ClickLogic;
 
     public void CloseWindow()
     {
@@ -26,8 +19,8 @@ public class PopUpWindowManager : MonoBehaviour
         throw new NotImplementedException();
     }
 
-    public void AdButton()
+    public void AdButtonClick()
     {
-
+        ClickLogic.RunClickLogic();
     }
 }
