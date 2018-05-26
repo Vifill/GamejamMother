@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnRate: 5
   PopupChanceModel:
-  - PopupPrefab: {fileID: 1926639530020768, guid: 1757d381e033b304398075dd49ba2655,
+  - PopupPrefab: {fileID: 1926639530020768, guid: 1c31a8e65b637d347a2e2548a600b775,
       type: 2}
     ChanceOfSpawn: 100

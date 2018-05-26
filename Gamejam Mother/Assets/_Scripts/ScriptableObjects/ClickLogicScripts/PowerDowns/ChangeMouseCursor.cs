@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Clicklogics/ChangeMouseCursor")]
+[CreateAssetMenu(menuName = "Clicklogics/PowerDowns/ChangeMouseCursor")]
 public class ChangeMouseCursor : OnClickLogic 
 {
     public List<Texture2D> CursorImages = new List<Texture2D>();

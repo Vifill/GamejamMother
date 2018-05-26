@@ -15,6 +15,8 @@ public class PopupSpawner : MonoBehaviour
     private Queue<SpawnModelTimerModel> SpawnModelQueue;
     private Canvas Canvas;
 
+    public List<GameObject> SpawnedPopups = new List<GameObject>();
+
     public void Initialize()
     {
         Canvas = FindObjectOfType<Canvas>();
@@ -98,6 +100,7 @@ public class PopupSpawner : MonoBehaviour
         Rect size = pPopupPrefab.GetComponent<RectTransform>().rect;
         var popup = Instantiate(pPopupPrefab, Canvas.transform);
         popup.transform.localPosition = GetSpawnLocation(size);
+        GameController.AddPopup(popup);
     }
 
     private Vector2 GetSpawnLocation(Rect pPrefabRect)
@@ -106,7 +109,6 @@ public class PopupSpawner : MonoBehaviour
         Vector2 limits = new Vector2((canvasRect.width - pPrefabRect.width)/2, (canvasRect.height - pPrefabRect.height)/2);
         return new Vector2(Random.Range(-limits.x, limits.x), Random.Range(-limits.y, limits.y));
     }
-
 }
 
 [Serializable]
