@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4574425331950606}
   - component: {fileID: 114228484897754414}
+  - component: {fileID: 114828299272760844}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -57,3 +58,15 @@ MonoBehaviour:
       type: 2}
     NumberOfInitialPopups: 50
     RateOfSpawn: 0.05
+  SpawnedPopups: []
+--- !u!114 &114828299272760844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1846812275298344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe691366437fdf242a5d50014f87b206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
