@@ -9,7 +9,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9342e4acd955a747868cdcbf0b66a92, type: 3}
-  m_Name: New Change Mouse Cursor
+  m_Name: Change Mouse Cursor
   m_EditorClassIdentifier: 
   UsesCoroutine: 0
-  CursorImages: []
+  CursorImages:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

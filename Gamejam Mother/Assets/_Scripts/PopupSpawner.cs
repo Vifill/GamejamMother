@@ -14,13 +14,14 @@ public class PopupSpawner : MonoBehaviour
     private SpawnModel CurrentSpawnModel;
     private List<PopupChanceModel> CurrentPopupChanceModels;
     private Queue<SpawnModelTimerModel> SpawnModelQueue;
-    private Image Background;
+    private Canvas Canvas;
+    public RectTransform PopUpSpawn;
 
     public List<GameObject> SpawnedPopups = new List<GameObject>();
 
     public void Initialize()
     {
-        Background = FindObjectOfType<Canvas>().transform.GetChild(0).GetComponent<Image>();
+        Canvas = FindObjectOfType<Canvas>();
         SpawnModelQueue = new Queue<SpawnModelTimerModel>(SpawnModelConfig.TimeModels);
 
         GameController.CanClick = false;
@@ -99,14 +100,14 @@ public class PopupSpawner : MonoBehaviour
     private void SpawnPopup(GameObject pPopupPrefab)
     {
         Rect size = pPopupPrefab.GetComponent<RectTransform>().rect;
-        var popup = Instantiate(pPopupPrefab, Background.transform);
+        var popup = Instantiate(pPopupPrefab, PopUpSpawn);
         popup.transform.localPosition = GetSpawnLocation(size);
         GameController.AddPopup(popup);
     }
 
     private Vector2 GetSpawnLocation(Rect pPrefabRect)
     {
-        var backgroundRect = Background.GetComponent<RectTransform>().rect;
+        var backgroundRect = PopUpSpawn.rect;
         Vector2 limits = new Vector2((backgroundRect.width - pPrefabRect.width)/2, (backgroundRect.height - pPrefabRect.height)/2);
         return new Vector2(Random.Range(-limits.x, limits.x), Random.Range(-limits.y, limits.y));
     }
