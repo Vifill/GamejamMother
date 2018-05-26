@@ -53,6 +53,7 @@ public class GameController : MonoBehaviour
 
     public void RunOnClick(OnClickLogic pOnClickLogic)
     {
+        pOnClickLogic.Initialize();
         if (pOnClickLogic.UsesCoroutine)
         {
             StartCoroutine(pOnClickLogic.RunClickCoroutine());
