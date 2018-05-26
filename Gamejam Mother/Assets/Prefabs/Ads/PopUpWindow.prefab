@@ -135,7 +135,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114218646527616432}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114508768999464766}
+        m_MethodName: CloseWindow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114178940243605960
@@ -316,7 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4339ab71165ada342b397f3cefede026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickLogic: {fileID: 0}
+  ClickLogic: {fileID: 11400000, guid: 644cd2ab651f1cb4f96b14d1caa4e9d8, type: 2}
 --- !u!114 &114749307482592362
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -382,7 +393,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114415116355314480}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114508768999464766}
+        m_MethodName: AdButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!222 &222329143932408300
@@ -437,8 +459,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 224308259786386070}
   - {fileID: 224923701347287732}
+  - {fileID: 224308259786386070}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -458,7 +480,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224151040365543368}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -496,7 +518,7 @@ RectTransform:
   - {fileID: 224615997460946230}
   - {fileID: 224029899562432396}
   m_Father: {fileID: 224151040365543368}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}

@@ -16,11 +16,11 @@ public class PopUpWindowManager : MonoBehaviour
 
     private void OnClose()
     {
-        //throw new NotImplementedException();
+        GameController.RemovePopup(gameObject);
     }
 
     public void AdButtonClick()
     {
-        ClickLogic.RunClickLogic();
+        FindObjectOfType<GameController>().RunOnClick(ClickLogic);
     }
 }
