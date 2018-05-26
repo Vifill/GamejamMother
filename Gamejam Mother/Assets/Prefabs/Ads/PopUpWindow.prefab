@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 222887414931580876}
   - component: {fileID: 114218646527616432}
   - component: {fileID: 114082998128266216}
+  - component: {fileID: 114613579004384652}
   m_Layer: 5
   m_Name: X Button
   m_TagString: Untagged
@@ -136,8 +137,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114508768999464766}
-        m_MethodName: CloseWindow
+      - m_Target: {fileID: 0}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -328,6 +329,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ClickLogic: {fileID: 11400000, guid: 3c44a5c200ae8eb40994f1ca48bff339, type: 2}
+--- !u!114 &114613579004384652
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1185050103683036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a43b5a2d1d4cd45b6375d7ab8ea496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonDownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114508768999464766}
+        m_MethodName: CloseWindow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114749307482592362
 MonoBehaviour:
   m_ObjectHideFlags: 1
