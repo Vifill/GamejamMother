@@ -235,6 +235,56 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114952941321197760, guid: 7c78c3aebb4721e4799ea8919f218535,
+        type: 2}
+      propertyPath: m_textAlignment
+      value: 513
+      objectReference: {fileID: 0}
+    - target: {fileID: 114952941321197760, guid: 7c78c3aebb4721e4799ea8919f218535,
+        type: 2}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114952941321197760, guid: 7c78c3aebb4721e4799ea8919f218535,
+        type: 2}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114952941321197760, guid: 7c78c3aebb4721e4799ea8919f218535,
+        type: 2}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114952941321197760, guid: 7c78c3aebb4721e4799ea8919f218535,
+        type: 2}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224115109564741660, guid: 7c78c3aebb4721e4799ea8919f218535,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 224780504997424736, guid: 7c78c3aebb4721e4799ea8919f218535,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761452477275466, guid: 7c78c3aebb4721e4799ea8919f218535,
+        type: 2}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761452477275466, guid: 7c78c3aebb4721e4799ea8919f218535,
+        type: 2}
+      propertyPath: m_fontSizeBase
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114761452477275466, guid: 7c78c3aebb4721e4799ea8919f218535,
+        type: 2}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7c78c3aebb4721e4799ea8919f218535, type: 2}
   m_IsPrefabParent: 0
@@ -477,12 +527,12 @@ RectTransform:
   m_Children:
   - {fileID: 1764231367}
   - {fileID: 480366047}
-  m_Father: {fileID: 1210509925}
-  m_RootOrder: 3
+  m_Father: {fileID: 796330539}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -737, y: -40}
+  m_AnchoredPosition: {x: -737, y: -65}
   m_SizeDelta: {x: 150, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555746980
@@ -715,7 +765,6 @@ RectTransform:
   - {fileID: 796330539}
   - {fileID: 446476188}
   - {fileID: 441622782}
-  - {fileID: 555746979}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 10.8, z: 0}
