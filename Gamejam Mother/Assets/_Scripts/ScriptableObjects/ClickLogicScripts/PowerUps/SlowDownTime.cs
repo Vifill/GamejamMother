@@ -28,7 +28,6 @@ public class SlowDownTime : OnClickLogic
             while (Timer < SlowdownLastTime)
             {
                 Timer += Time.deltaTime;
-                Debug.Log(Timer);
                 yield return null;
             }
             StopTimeSlow();

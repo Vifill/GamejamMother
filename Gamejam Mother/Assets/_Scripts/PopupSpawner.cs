@@ -42,9 +42,10 @@ public class PopupSpawner : MonoBehaviour
     {
         if (InitialSpawnConfig.InitialSpawnModel != null && InitialSpawnConfig.InitialSpawnModel.PopupChanceModel.Any())
         {
+            var chanceModel = GetChanceModel(InitialSpawnConfig.InitialSpawnModel);
             for (int i = 0; i < InitialSpawnConfig.NumberOfInitialPopups; i++)
             {
-                var prefab = InitialSpawnConfig.InitialSpawnModel.PopupChanceModel[Random.Range(0, InitialSpawnConfig.InitialSpawnModel.PopupChanceModel.Count())].PopupPrefab;
+                var prefab = GetPrefabToSpawn(chanceModel);
                 SpawnPopup(prefab);
                 yield return new WaitForSeconds(InitialSpawnConfig.RateOfSpawn);
             }
@@ -85,8 +86,13 @@ public class PopupSpawner : MonoBehaviour
 
     private void InitializeSpawnModel(SpawnModel pModel)
     {
-        CurrentSpawnModel = pModel;
-        var popupChanceModels = pModel.PopupChanceModel.Where(a => a.PopupPrefab != null).OrderBy(a=> a.ChanceOfSpawn);
+        CurrentPopupChanceModels = GetChanceModel(pModel);
+    }
+
+    public List<PopupChanceModel> GetChanceModel(SpawnModel pSpawnModel)
+    {
+        CurrentSpawnModel = pSpawnModel;
+        var popupChanceModels = pSpawnModel.PopupChanceModel.Where(a => a.PopupPrefab != null).OrderBy(a => a.ChanceOfSpawn);
 
         List<PopupChanceModel> tmpList = new List<PopupChanceModel>();
         float totalChance = 0;
@@ -96,29 +102,36 @@ public class PopupSpawner : MonoBehaviour
             tmpList.Add(new PopupChanceModel { ChanceOfSpawn = totalChance, PopupPrefab = model.PopupPrefab });
         }
 
-        CurrentPopupChanceModels = tmpList;
+        return tmpList;
     }
 
     private GameObject GetPrefabToSpawn()
     {
-        var totalChance = CurrentPopupChanceModels.Last().ChanceOfSpawn;
+        return GetPrefabToSpawn(CurrentPopupChanceModels);
+    }
+
+    public GameObject GetPrefabToSpawn(List<PopupChanceModel> pSpawnModel)
+    {
+        var totalChance = pSpawnModel.Last().ChanceOfSpawn;
         var roll = Random.Range(0, totalChance);
-        return CurrentPopupChanceModels.FirstOrDefault(a => roll <= a.ChanceOfSpawn).PopupPrefab;
+
+        return pSpawnModel.FirstOrDefault(a => roll <= a.ChanceOfSpawn).PopupPrefab;
     }
 
     private void SpawnPopup(GameObject pPopupPrefab)
     {
-        Rect size = pPopupPrefab.GetComponent<RectTransform>().rect;
-        var popup = Instantiate(pPopupPrefab, PopUpSpawn);
+        var realPrefab = pPopupPrefab.GetComponent<PopUpWindowManager>().GetPrefab();
+        Rect size = realPrefab.transform.Find("Border").GetComponent<RectTransform>().rect;
+        var popup = Instantiate(realPrefab, PopUpSpawn);
         popup.transform.localPosition = GetSpawnLocation(size);
         GameController.AddPopup(popup);
         AudioManager.PlaySFX(AudioManager.Sounds.BalloonSound);
     }
 
-    private Vector2 GetSpawnLocation(Rect pPrefabRect)
+    private Vector2 GetSpawnLocation(Rect pBorderRect)
     {
         var backgroundRect = PopUpSpawn.rect;
-        Vector2 limits = new Vector2((backgroundRect.width - pPrefabRect.width)/2, (backgroundRect.height - pPrefabRect.height)/2);
+        Vector2 limits = new Vector2((backgroundRect.width - pBorderRect.width)/2, (backgroundRect.height - pBorderRect.height)/2);
         return new Vector2(Random.Range(-limits.x, limits.x), Random.Range(-limits.y, limits.y));
     }
 }

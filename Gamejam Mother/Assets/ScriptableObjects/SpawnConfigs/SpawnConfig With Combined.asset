@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cf37bb669ce7f2469aac524b15dc717, type: 3}
+  m_Name: SpawnConfig With Combined
+  m_EditorClassIdentifier: 
+  TimeModels:
+  - SpawnModel: {fileID: 11400000, guid: 973a45ac1a626af4f904debc8cfba556, type: 2}
+    TimeToNextModel: 10
+  - SpawnModel: {fileID: 11400000, guid: ff49d191f306573429cde2d0b93d500f, type: 2}
+    TimeToNextModel: 10
+  - SpawnModel: {fileID: 11400000, guid: c1f74fdeab30f5547b5db820494a83f1, type: 2}
+    TimeToNextModel: 10

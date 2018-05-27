@@ -45,7 +45,6 @@ public class AudioManager : MonoBehaviour
         {
             time += Time.deltaTime;
             interval += Time.deltaTime;
-            Debug.Log(time);
             if (interval >= 0.1f)
             {
                 aErrorSource.PlayOneShot(Clips[Sounds.ErrorSound]);
@@ -54,7 +53,7 @@ public class AudioManager : MonoBehaviour
             yield return null;
         }
 
-        var aSource = Sources.Where(a => !a.isPlaying).FirstOrDefault();
+        var aSource = Sources.FirstOrDefault(a => !a.isPlaying);
         aSource.outputAudioMixerGroup = MusicMixer;
         aSource.PlayOneShot(Clips[Sounds.ComputerErrorSong]);
         aSource.loop = true;

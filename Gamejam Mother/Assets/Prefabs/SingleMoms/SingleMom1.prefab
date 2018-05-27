@@ -159,6 +159,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ClickLogic: {fileID: 11400000, guid: 644cd2ab651f1cb4f96b14d1caa4e9d8, type: 2}
+  Prefabs:
+  - {fileID: 1903489657944838}
+  - {fileID: 1076898002398312, guid: d91b88c8fb6834142bbcd1140e05ed8c, type: 2}
+  - {fileID: 1279333585368330, guid: 1c1d8d4da13505841a710a70125981ae, type: 2}
+  - {fileID: 1400684106749674, guid: 3a260274d4c65f0489210ff5085d021e, type: 2}
+  - {fileID: 1336500487678554, guid: 47d093c3cb27cf44495d0c6dd2cbd3f0, type: 2}
+  - {fileID: 1973604066173654, guid: 01a5872982aa68a49b6d73b224582824, type: 2}
+  - {fileID: 1566882105394048, guid: 7836562a5d8c45f4c97bd7729b878d29, type: 2}
 --- !u!114 &114258969884765894
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1340295736959614}
+  m_IsPrefabParent: 1
+--- !u!1 &1340295736959614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4820808497051280}
+  - component: {fileID: 114355109813551552}
+  m_Layer: 0
+  m_Name: All Boobgrowth
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4820808497051280
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1340295736959614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 488.4483, y: 299.34525, z: 6.84202}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114355109813551552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1340295736959614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4339ab71165ada342b397f3cefede026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClickLogic: {fileID: 0}
+  Prefabs:
+  - {fileID: 1049509483003548, guid: 58a8d2e04e13758488e4103369e43562, type: 2}
+  - {fileID: 1922984513568860, guid: 06eab083e0be89e4bb6d8736497f1650, type: 2}
+  - {fileID: 1578652782967336, guid: ac688585958f1e449a06be8e137e3654, type: 2}
+  - {fileID: 1687447391826742, guid: f86c13db952100e4db71d6a0fc8630d3, type: 2}
+  - {fileID: 1939411515090764, guid: 997b2aa8807e7ea4291482edffb305c3, type: 2}
+  - {fileID: 1301193459678728, guid: c6887ee3dfc2dfc42af3a14f718e3db9, type: 2}
