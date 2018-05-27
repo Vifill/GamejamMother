@@ -103,6 +103,7 @@ public class AudioManager : MonoBehaviour
         MouseClickUp,
         DialUp,
         ErrorSound,
-        BalloonSound
+        BalloonSound,
+        CongratsYouWon
     }
 }
