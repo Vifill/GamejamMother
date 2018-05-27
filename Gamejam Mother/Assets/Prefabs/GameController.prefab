@@ -61,6 +61,8 @@ MonoBehaviour:
     NumberOfInitialPopups: 50
     RateOfSpawn: 0.05
   PopUpSpawn: {fileID: 0}
+  NotepadPrefab: {fileID: 1912277869422052, guid: 0c5689156fc9d5945b78f3fbfa79d1d5,
+    type: 2}
 --- !u!114 &114275795002100224
 MonoBehaviour:
   m_ObjectHideFlags: 1
