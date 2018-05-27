@@ -77,6 +77,22 @@ public class AudioManager : MonoBehaviour
         
     }
 
+    public void EndGame()
+    {
+        StartCoroutine(EndGameAudio());
+    }
+
+    private IEnumerator EndGameAudio()
+    {
+        var source = Sources.FirstOrDefault(a => !a.isPlaying);
+        source.PlayOneShot(Clips[Sounds.CrashSound]);
+        while (source.isPlaying)
+        {
+            yield return null;
+        }
+        source.PlayOneShot(Clips[Sounds.SmashMouth]);
+    }
+
     private IEnumerator RemoveExtraAudioSource(AudioSource pSource)
     {
         while (pSource.isPlaying)
@@ -113,6 +129,7 @@ public class AudioManager : MonoBehaviour
         Noice,
         Win98Error,
         Ram,
-        SmashMouth
+        SmashMouth,
+        CrashSound
     }
 }
