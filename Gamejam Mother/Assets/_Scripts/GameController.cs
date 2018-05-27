@@ -72,6 +72,7 @@ public class GameController : MonoBehaviour
         FindObjectOfType<AudioManager>().StopAllSounds();
 
         //play end sound
+        FindObjectOfType<AudioManager>().EndGame();
         Instantiate(EndScreenPrefab, FindObjectOfType<Canvas>().transform);
     }
 
@@ -82,6 +83,14 @@ public class GameController : MonoBehaviour
 
     public static void QuitGame()
     {
+        FindObjectOfType<AudioManager>().StopAllSounds();
+        FindObjectOfType<AudioManager>().PlaySFX(AudioManager.Sounds.ShutDownSound);
+        instance.Invoke("CloseApplication", 2.5f);
+    }
+
+    private void CloseApplication()
+    {
+        Debug.Log("quit");
         Application.Quit();
     }
 }

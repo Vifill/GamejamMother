@@ -11,6 +11,7 @@ public class PopupSpawner : MonoBehaviour
     public SpawnModelConfig SpawnModelConfig;
     public InitialSpawnConfig InitialSpawnConfig;
     public RectTransform PopUpSpawn;
+    public GameObject NotepadPrefab;
 
     private SpawnModel CurrentSpawnModel;
     private List<PopupChanceModel> CurrentPopupChanceModels;
@@ -142,7 +143,15 @@ public class PopupSpawner : MonoBehaviour
 
     public void StopSpawn()
     {
-        StopCoroutine(CurrentSpawnCoroutine);
+        if (CurrentSpawnCoroutine != null)
+        {
+            StopCoroutine(CurrentSpawnCoroutine);
+        }
+    }
+
+    public void SpawnNotepad()
+    {
+        Instantiate(NotepadPrefab, PopUpSpawn);
     }
 }
 
