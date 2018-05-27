@@ -19,15 +19,18 @@ MonoBehaviour:
   - PopupPrefab: {fileID: 1340295736959614, guid: 97326dfe1cfbd1048a86e70a2ca7af07,
       type: 2}
     ChanceOfSpawn: 40
-  - PopupPrefab: {fileID: 1815985544625590, guid: 9de8445bd6e84aa4a9621f504b33546f,
-      type: 2}
-    ChanceOfSpawn: 10
-  - PopupPrefab: {fileID: 1140503633880006, guid: 77f6e8d0872ca1c4bbc7580f331d8a63,
-      type: 2}
-    ChanceOfSpawn: 10
   - PopupPrefab: {fileID: 1446592789369490, guid: 87cddc2c6d798314793942682b0ecb3e,
       type: 2}
     ChanceOfSpawn: 10
+  - PopupPrefab: {fileID: 1815985544625590, guid: 9de8445bd6e84aa4a9621f504b33546f,
+      type: 2}
+    ChanceOfSpawn: 40
+  - PopupPrefab: {fileID: 1140503633880006, guid: 77f6e8d0872ca1c4bbc7580f331d8a63,
+      type: 2}
+    ChanceOfSpawn: 20
   - PopupPrefab: {fileID: 1464756250624068, guid: f30691dcefde96f4cb1ec23a765d5a37,
       type: 2}
-    ChanceOfSpawn: 15
+    ChanceOfSpawn: 20
+  - PopupPrefab: {fileID: 1894352161942528, guid: cb8fc812b8751534297d59457933d068,
+      type: 2}
+    ChanceOfSpawn: 40
