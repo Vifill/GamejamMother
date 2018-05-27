@@ -15,6 +15,10 @@ MonoBehaviour:
   - SpawnModel: {fileID: 11400000, guid: 973a45ac1a626af4f904debc8cfba556, type: 2}
     TimeToNextModel: 10
   - SpawnModel: {fileID: 11400000, guid: ff49d191f306573429cde2d0b93d500f, type: 2}
-    TimeToNextModel: 10
+    TimeToNextModel: 20
   - SpawnModel: {fileID: 11400000, guid: c1f74fdeab30f5547b5db820494a83f1, type: 2}
+    TimeToNextModel: 20
+  - SpawnModel: {fileID: 11400000, guid: b211588dfff68e242a7b50aa8aef108a, type: 2}
+    TimeToNextModel: 20
+  - SpawnModel: {fileID: 11400000, guid: 4ed8090b33b0e884eb673b495c37b37a, type: 2}
     TimeToNextModel: 10

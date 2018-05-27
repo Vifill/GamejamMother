@@ -30,4 +30,4 @@ MonoBehaviour:
     ChanceOfSpawn: 5
   - PopupPrefab: {fileID: 1464756250624068, guid: f30691dcefde96f4cb1ec23a765d5a37,
       type: 2}
-    ChanceOfSpawn: 15
+    ChanceOfSpawn: 10
