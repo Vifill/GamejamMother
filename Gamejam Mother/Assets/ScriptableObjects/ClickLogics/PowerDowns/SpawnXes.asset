@@ -8,9 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa1b55cc5ea904c4c832f0b238aa5e03, type: 3}
-  m_Name: RandomPowerDown1
+  m_Script: {fileID: 11500000, guid: 5b0524db952c66647a0d1278cf041513, type: 3}
+  m_Name: SpawnXes
   m_EditorClassIdentifier: 
   UsesCoroutine: 1
-  PotentialClickLogics:
-  - {fileID: 11400000, guid: 393015c1a6cf1d9498b2100c80a59bbc, type: 2}
+  TimeToSpawn: 3
+  XPrefab: {fileID: 1070529203186466, guid: 943fea93acc13194ca3d5b723fce63a5, type: 2}
