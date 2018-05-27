@@ -23,7 +23,6 @@ public class Clippy : OnClickLogic
             clippy.transform.localPosition = Vector3.Lerp(clippy.transform.localPosition, nextPosition, MoveSpeed * Time.deltaTime);
             if (Vector3.Distance(clippy.transform.localPosition, nextPosition) < 1)
             {
-                Debug.Log("CLose enoguh");
                 nextPosition = popupSpawner.GetSpawnLocation(clippy.GetComponent<RectTransform>().rect);
             }
             yield return null;
