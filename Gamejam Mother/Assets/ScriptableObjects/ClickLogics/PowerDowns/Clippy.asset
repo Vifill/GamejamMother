@@ -8,8 +8,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24283a80c61e9e743a851ae3063c36c1, type: 3}
-  m_Name: FreeRamDownload
+  m_Script: {fileID: 11500000, guid: ff5aca608a385d44fa920d499bef41d4, type: 3}
+  m_Name: Clippy
   m_EditorClassIdentifier: 
-  UsesCoroutine: 0
-  MemoryToClear: 2
+  UsesCoroutine: 1
+  ClippyPrefab: {fileID: 1070529203186466, guid: 943fea93acc13194ca3d5b723fce63a5,
+    type: 2}
+  TimeToRoam: 7
+  MoveSpeed: 5

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114518767001865746}
   m_Layer: 5
   m_Name: PopUpWindow - YouWon7
-  m_TagString: Untagged
+  m_TagString: Ad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

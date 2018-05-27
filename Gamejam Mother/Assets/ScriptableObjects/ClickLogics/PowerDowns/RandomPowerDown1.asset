@@ -13,4 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UsesCoroutine: 1
   PotentialClickLogics:
+  - {fileID: 11400000, guid: 2f69ff11eee590848ab5335ef19a4993, type: 2}
+  - {fileID: 11400000, guid: 33723c0c5b0bde641804ca1578100152, type: 2}
+  - {fileID: 11400000, guid: 0de3e8a1e240aad4485fcb3c3552142d, type: 2}
+  - {fileID: 11400000, guid: 4175cdcaabdf5684b9ac0821ece287cb, type: 2}
   - {fileID: 11400000, guid: 393015c1a6cf1d9498b2100c80a59bbc, type: 2}
+  - {fileID: 11400000, guid: 7770994e0f8e805479305c2be34daaa3, type: 2}

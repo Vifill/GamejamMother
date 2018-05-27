@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4339ab71165ada342b397f3cefede026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickLogic: {fileID: 0}
+  ClickLogic: {fileID: 11400000, guid: 3c44a5c200ae8eb40994f1ca48bff339, type: 2}
   Prefabs:
   - {fileID: 1190023575455770, guid: 55a76f5bf56d4b548a8929eae452303f, type: 2}
   - {fileID: 1656821973117768, guid: 6cc57f5f02f98ca42aabbc54e181ec96, type: 2}
@@ -64,3 +64,4 @@ MonoBehaviour:
   - {fileID: 1603616856287252, guid: 9340b0d88a0d56a4998a6391848aff9d, type: 2}
   - {fileID: 1715710123773450, guid: 2f412702d1b5352418863d20c9d1ecdc, type: 2}
   - {fileID: 1926639530020768, guid: 1c31a8e65b637d347a2e2548a600b775, type: 2}
+  Tag: Ad
