@@ -60,6 +60,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d49f9d7348a5adb4ca3ccee002d89de5, type: 3}
   - {fileID: 8300000, guid: d7032605f661cb04393bf1139ed71945, type: 3}
   - {fileID: 8300000, guid: 1f7d9ef3f36af974d810a6a53089c742, type: 3}
+  - {fileID: 8300000, guid: 55a9c71a147e113428592cc76a6c54ed, type: 3}
+  - {fileID: 8300000, guid: 250ffc8716b84eb48b639784bce6f3a6, type: 3}
   SfxMixer: {fileID: 243590319271034222, guid: e07130d55f6a5cd4881fc63b922287c4, type: 2}
   MusicMixer: {fileID: 243087039707816434, guid: e07130d55f6a5cd4881fc63b922287c4,
     type: 2}

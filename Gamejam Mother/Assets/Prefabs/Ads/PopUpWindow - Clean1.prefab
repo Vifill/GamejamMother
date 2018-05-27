@@ -137,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ClickLogic: {fileID: 11400000, guid: 2f69ff11eee590848ab5335ef19a4993, type: 2}
+  Prefabs: []
 --- !u!114 &114235232394851642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -465,8 +466,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 790, y: 588}
+  m_AnchoredPosition: {x: 0, y: 1470}
+  m_SizeDelta: {x: 469, y: 364}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224056713211616768
 RectTransform:
