@@ -69,7 +69,9 @@ public class GameController : MonoBehaviour
     public void LoseGame()
     {
         FindObjectOfType<PopupSpawner>().StopSpawn();
+        FindObjectOfType<AudioManager>().StopAllSounds();
 
+        //play end sound
         Instantiate(EndScreenPrefab, FindObjectOfType<Canvas>().transform);
     }
 
