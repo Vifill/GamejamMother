@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Name: SpawnXes
   m_EditorClassIdentifier: 
   UsesCoroutine: 1
-  TimeToSpawn: 3
+  TimeBetween: 0.1
+  NumberOfXes: 10
   XPrefab: {fileID: 1070529203186466, guid: 943fea93acc13194ca3d5b723fce63a5, type: 2}

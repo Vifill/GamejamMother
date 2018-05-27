@@ -13,10 +13,12 @@ public class PopUpWindowManager : MonoBehaviour
     public string Tag;
 
     private PointsManager PointsManager;
+    private AudioManager AudioManager;
 
     private void Start()
     {
         PointsManager = FindObjectOfType<PointsManager>();
+        AudioManager = FindObjectOfType<AudioManager>();
     }
 
     public void CloseWindow()
@@ -35,12 +37,21 @@ public class PopUpWindowManager : MonoBehaviour
 
     public void AdButtonClick()
     {
-        FindObjectOfType<GameController>().RunOnClick(ClickLogic);
-
         if (tag == "Moms")
         {
             PointsManager.AddPoint();
+            AudioManager.PlaySFX(AudioManager.Sounds.Noice);
         }
+        else if (tag == "Ad")
+        {
+            AudioManager.PlaySFX(AudioManager.Sounds.Win98Error);
+        }
+        else if (tag == "Ram")
+        {
+            AudioManager.PlaySFX(AudioManager.Sounds.Ram);
+        }
+
+        FindObjectOfType<GameController>().RunOnClick(ClickLogic);
     }
 
     public GameObject GetPrefab()

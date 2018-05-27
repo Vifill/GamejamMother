@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 114150309609422442}
   m_Layer: 5
   m_Name: PopUpWindow - Clean1
-  m_TagString: Untagged
+  m_TagString: Ad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,6 +138,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ClickLogic: {fileID: 11400000, guid: 3c44a5c200ae8eb40994f1ca48bff339, type: 2}
   Prefabs: []
+<<<<<<< HEAD
+  Tag: 
+=======
+  Tag: Ad
+>>>>>>> 99bf9a11b7f10ebbc13585bd7cf5d1e9cb690cff
 --- !u!114 &114235232394851642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -466,7 +471,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1470}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 469, y: 364}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224056713211616768
@@ -518,11 +523,11 @@ RectTransform:
   m_Father: {fileID: 224035685102999726}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -34}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 4}
   m_SizeDelta: {x: 463, y: 326}
-  m_Pivot: {x: 0.5, y: 1}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224998993905835808
 RectTransform:
   m_ObjectHideFlags: 1
@@ -541,5 +546,5 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 469, y: 364}
+  m_SizeDelta: {x: 471, y: 364}
   m_Pivot: {x: 0.5, y: 1}
