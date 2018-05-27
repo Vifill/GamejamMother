@@ -66,6 +66,11 @@ public class PopUpWindowManager : MonoBehaviour
 
             
         }
+        else if (!string.IsNullOrEmpty(Tag))
+        {
+            gameObject.tag = Tag;
+        }
+
         return gameObject;
     }
 }

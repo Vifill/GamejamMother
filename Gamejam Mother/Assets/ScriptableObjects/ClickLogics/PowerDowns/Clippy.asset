@@ -8,10 +8,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b0524db952c66647a0d1278cf041513, type: 3}
-  m_Name: SpawnXes
+  m_Script: {fileID: 11500000, guid: ff5aca608a385d44fa920d499bef41d4, type: 3}
+  m_Name: Clippy
   m_EditorClassIdentifier: 
   UsesCoroutine: 1
-  TimeBetween: 0.1
-  NumberOfXes: 10
-  XPrefab: {fileID: 1070529203186466, guid: 943fea93acc13194ca3d5b723fce63a5, type: 2}
+  ClippyPrefab: {fileID: 1070529203186466, guid: 943fea93acc13194ca3d5b723fce63a5,
+    type: 2}
+  TimeToRoam: 7
+  MoveSpeed: 5
