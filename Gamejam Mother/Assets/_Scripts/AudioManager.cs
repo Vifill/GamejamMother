@@ -91,7 +91,7 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     public void ChangeMusicPitch(float pPitch)
     {
-        MusicSource.pitch = pPitch;
+        Sources.ForEach(a => a.pitch = pPitch);
     }
 
     public enum Sounds
