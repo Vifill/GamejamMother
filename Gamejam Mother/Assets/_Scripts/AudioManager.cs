@@ -94,6 +94,11 @@ public class AudioManager : MonoBehaviour
         Sources.ForEach(a => a.pitch = pPitch);
     }
 
+    public void StopAllSounds()
+    {
+        Sources.ForEach(a => a.Stop());
+    }
+
     public enum Sounds
     {
         ComputerErrorSong,

@@ -5,18 +5,13 @@ using UnityEngine;
 
 public class EndScreenUIManager : MonoBehaviour 
 {
-    public TextMeshPro ScoreText;
+    public TextMeshProUGUI ScoreText;
 
     private PointsManager PointsManager;
 
     private void Start()
     {
         PointsManager = FindObjectOfType<PointsManager>();
-    }
-
-    private void SetScoreText()
-    {
-
         ScoreText.text = PointsManager.Points + " single moms";
     }
 
