@@ -52,5 +52,6 @@ public class RotatePopups : OnClickLogic
                 break;
         }
         pTransform.GetComponent<RectTransform>().rotation = new Quaternion(0, 0, rotation, 0);
+        Debug.Log(rotation);
     }
 }
