@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    public GameObject EndScreenPrefab;
     public static bool CanClick = false;
 
     private static List<GameObject> ActivePopups = new List<GameObject>();
@@ -62,5 +64,22 @@ public class GameController : MonoBehaviour
         {
             pOnClickLogic.RunClickLogic();
         }
+    }
+
+    public void LoseGame()
+    {
+        FindObjectOfType<PopupSpawner>().StopSpawn();
+
+        Instantiate(EndScreenPrefab, FindObjectOfType<Canvas>().transform);
+    }
+
+    public static void RestartGame()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public static void QuitGame()
+    {
+        Application.Quit();
     }
 }

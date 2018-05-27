@@ -17,6 +17,7 @@ public class PopupSpawner : MonoBehaviour
     private Queue<SpawnModelTimerModel> SpawnModelQueue;
     private AudioManager AudioManager;
     private bool IsInitialized;
+    private Coroutine CurrentSpawnCoroutine;
 
     public void Initialize()
     {
@@ -52,7 +53,7 @@ public class PopupSpawner : MonoBehaviour
     public void StartGame()
     {
         StartCoroutine(SpawnModelSwitchCoroutine());
-        StartCoroutine(SpawnCoroutine());
+        CurrentSpawnCoroutine = StartCoroutine(SpawnCoroutine());
     }
 
     private IEnumerator SpawnModelSwitchCoroutine()
@@ -137,6 +138,11 @@ public class PopupSpawner : MonoBehaviour
         //return new Vector2(0, limits.y);
 
         return new Vector2(Random.Range(-limits.x, limits.x), Random.Range(-limits.y, limits.y));
+    }
+
+    public void StopSpawn()
+    {
+        StopCoroutine(CurrentSpawnCoroutine);
     }
 }
 

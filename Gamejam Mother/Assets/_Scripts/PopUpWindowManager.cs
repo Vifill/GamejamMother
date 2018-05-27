@@ -10,6 +10,14 @@ public class PopUpWindowManager : MonoBehaviour
 {
     public OnClickLogic ClickLogic;
     public List<GameObject> Prefabs;
+    public string Tag;
+
+    private PointsManager PointsManager;
+
+    private void Start()
+    {
+        PointsManager = FindObjectOfType<PointsManager>();
+    }
 
     public void CloseWindow()
     {
@@ -25,13 +33,27 @@ public class PopUpWindowManager : MonoBehaviour
     public void AdButtonClick()
     {
         FindObjectOfType<GameController>().RunOnClick(ClickLogic);
+
+        if (tag == "Moms")
+        {
+            PointsManager.AddPoint();
+        }
     }
 
     public GameObject GetPrefab()
     {
         if (Prefabs != null && Prefabs.Any())
         {
-            return Prefabs[Random.Range(0, Prefabs.Count)];
+            var prefabToSpawn = Prefabs[Random.Range(0, Prefabs.Count)];
+
+            if (!string.IsNullOrEmpty(Tag))
+            {
+                prefabToSpawn.tag = Tag;
+            }
+
+            return prefabToSpawn;
+
+            
         }
         return gameObject;
     }
