@@ -408,10 +408,10 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "-How To Play:\n\t\n\t-Start by double clicking the \"Mozarella Fire Sloth\"
     icon.\n\t\n\t-The goal of the game is to click as many \"Single Mom\" \n\tads
-    as you possible can before your computer crashes.\n\t\n\t-In the bottom right
-    corner is a bar that shows your memory \n\tusage if it hits 100% the game ends.\n\n\t-The
-    \"Single Mom\" ads give you power-ups but almost every\n\tevery other ad wil give
-    you a \"power-down\" which has a \n\tnegative effect."
+    as you possibly can before your computer crashes.\n\t\n\t-In the bottom right
+    corner is a bar that shows your memory \n\tusage, if it hits 100% the game ends.\n\n\t-The
+    \"Single Mom\" ads give you power-ups but almost\n\tevery other ad will give you
+    a \"power-down\" which has a \n\tnegative effect."
 --- !u!114 &114927340775703116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -493,7 +493,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1912277869422052}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
