@@ -398,6 +398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ClickLogic: {fileID: 11400000, guid: 3c44a5c200ae8eb40994f1ca48bff339, type: 2}
   Prefabs: []
+  Tag: 
 --- !u!114 &114951151150844620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -485,7 +486,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 794, y: 486}
+  m_SizeDelta: {x: 794, y: 484}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!224 &224656559061228902
 RectTransform:
@@ -518,11 +519,11 @@ RectTransform:
   m_Father: {fileID: 224872148641939306}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -37}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 6}
   m_SizeDelta: {x: 786, y: 445}
-  m_Pivot: {x: 0.5, y: 1}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224872148641939306
 RectTransform:
   m_ObjectHideFlags: 1
@@ -540,6 +541,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 588}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 794, y: 486}
   m_Pivot: {x: 0.5, y: 0.5}
