@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1894352161942528}
+  m_IsPrefabParent: 1
+--- !u!1 &1894352161942528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4961176672581276}
+  - component: {fileID: 114970120196524250}
+  m_Layer: 0
+  m_Name: All Rest Misc
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4961176672581276
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1894352161942528}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114970120196524250
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1894352161942528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4339ab71165ada342b397f3cefede026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClickLogic: {fileID: 11400000, guid: 3c44a5c200ae8eb40994f1ca48bff339, type: 2}
+  Prefabs:
+  - {fileID: 1657780700410534, guid: 1688551b6b003c441a238004bcb8a86a, type: 2}
+  - {fileID: 1449385453675924, guid: 1c883aac8d80ecf42b8ba5564406d7a2, type: 2}
+  - {fileID: 1307566667486080, guid: 7fd5bfaad4fd74347a6495a2069c7497, type: 2}
+  - {fileID: 1898605328719716, guid: f505a84afe4b5ce47a4305162c0f9d55, type: 2}
+  - {fileID: 1030436505766074, guid: bcfdd8f8302f2974c8b0fdefe27497cc, type: 2}
+  - {fileID: 1026737866192370, guid: b8533fd4963624c438df862605735a88, type: 2}
+  - {fileID: 1280958936147622, guid: 195c0d13345de984fb49ee4c66730d78, type: 2}
+  - {fileID: 1505262201194658, guid: ed35c8c3ff1734b43904fbbb930f5ee4, type: 2}
+  - {fileID: 1468685815694012, guid: f14727fb8e3d93d4491c77360910ddca, type: 2}
+  - {fileID: 1122139294183468, guid: ec6f29ee9a698a747bf6b971ffc26521, type: 2}
+  - {fileID: 1920654742419178, guid: adb69118c216415459636091dfe79cb4, type: 2}
+  - {fileID: 1588843538502552, guid: b91954e55430eca41b2009ef9734e9a1, type: 2}
+  - {fileID: 1566679815573184, guid: 3db57a25ed864a44a9dae7b9127c7427, type: 2}
+  - {fileID: 1714986880434802, guid: 5837d5a73fd47ef4e86806bcb0c5559c, type: 2}
+  - {fileID: 1347740146863306, guid: 04049f827200ee94c989246fc6589686, type: 2}
+  Tag: Ad

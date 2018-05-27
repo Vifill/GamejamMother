@@ -9,8 +9,15 @@ public class Clippy : OnClickLogic
     public float TimeToRoam;
     public float MoveSpeed;
 
+    public static bool ClippyIsPresent;
+
     public override IEnumerator RunClickCoroutine()
     {
+        if (ClippyIsPresent)
+        {
+            yield break;
+        }
+        ClippyIsPresent = true;
         var popupSpawner = FindObjectOfType<PopupSpawner>();
         GameObject clippy = CreateClippy(popupSpawner);
         var nextPosition = popupSpawner.GetSpawnLocation(clippy.GetComponent<RectTransform>().rect);
@@ -27,6 +34,9 @@ public class Clippy : OnClickLogic
             }
             yield return null;
         }
+
+        Destroy(clippy);
+        ClippyIsPresent = false;
     }
 
     private GameObject CreateClippy(PopupSpawner pPopupSpawner)

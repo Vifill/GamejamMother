@@ -11,8 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f4762bbee13d9c40b2798fc7011ef83, type: 3}
   m_Name: RotateOverTime
   m_EditorClassIdentifier: 
-  UsesCoroutine: 0
-  NumerToRotate: 7
-  RotateSpeed: 2
-  TimeToShake: 3
-  MoveSpeed: 0
+  UsesCoroutine: 1
+  NumerToRotate: 6
+  RotateSpeed: 1
+  TimeToRotate: 6

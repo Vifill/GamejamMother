@@ -42,7 +42,10 @@ public class RotateOverTimePopups : OnClickLogic
             time += Time.deltaTime;
             for (int i = 0; i < size; i++)
             {
-                Rotate(popups[i].transform, directions[i]);
+                if (popups[i] != null)
+                {
+                    Rotate(popups[i].transform, directions[i]);
+                }
             }
             yield return null;
         }
