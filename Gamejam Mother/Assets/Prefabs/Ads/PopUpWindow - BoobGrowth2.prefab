@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 114476178650760038}
   m_Layer: 5
   m_Name: PopUpWindow - BoobGrowth2
-  m_TagString: Untagged
+  m_TagString: Ad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -233,6 +233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ClickLogic: {fileID: 11400000, guid: 3c44a5c200ae8eb40994f1ca48bff339, type: 2}
   Prefabs: []
+  Tag: 
 --- !u!114 &114637412942150286
 MonoBehaviour:
   m_ObjectHideFlags: 1

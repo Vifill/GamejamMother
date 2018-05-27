@@ -112,6 +112,7 @@ public class AudioManager : MonoBehaviour
         CongratsYouWon,
         Noice,
         Win98Error,
-        Ram
+        Ram,
+        SmashMouth
     }
 }

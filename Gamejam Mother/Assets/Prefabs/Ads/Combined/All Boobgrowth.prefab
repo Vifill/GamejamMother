@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4339ab71165ada342b397f3cefede026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickLogic: {fileID: 0}
+  ClickLogic: {fileID: 11400000, guid: 3c44a5c200ae8eb40994f1ca48bff339, type: 2}
   Prefabs:
   - {fileID: 1049509483003548, guid: 58a8d2e04e13758488e4103369e43562, type: 2}
   - {fileID: 1922984513568860, guid: 06eab083e0be89e4bb6d8736497f1650, type: 2}
