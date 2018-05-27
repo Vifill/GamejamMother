@@ -119,7 +119,6 @@ public class PopupSpawner : MonoBehaviour
     {
         var realPrefab = pPopupPrefab.GetComponent<PopUpWindowManager>().GetPrefab();
         Rect size = realPrefab.transform.Find("Border").GetComponent<RectTransform>().rect;
-        realPrefab.tag = pPopupPrefab.GetComponent<PopUpWindowManager>().Tag;
         realPrefab.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, size.width);
         realPrefab.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, size.height);
         var popup = Instantiate(realPrefab, PopUpSpawn);
