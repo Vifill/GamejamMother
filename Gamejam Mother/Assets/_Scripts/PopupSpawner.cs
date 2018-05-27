@@ -142,7 +142,10 @@ public class PopupSpawner : MonoBehaviour
 
     public void StopSpawn()
     {
-        StopCoroutine(CurrentSpawnCoroutine);
+        if (CurrentSpawnCoroutine != null)
+        {
+            StopCoroutine(CurrentSpawnCoroutine);
+        }
     }
 }
 

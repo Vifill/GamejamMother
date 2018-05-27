@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 224762116861579732}
   - component: {fileID: 114788636350533212}
   m_Layer: 5
-  m_Name: PopUpWindow - Chat1 1
+  m_Name: PopUpWindow - Dating1
   m_TagString: Ad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
