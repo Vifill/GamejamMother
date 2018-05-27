@@ -16,15 +16,15 @@ public class AutoClicker : OnClickLogic
 
     public override IEnumerator RunClickCoroutine()
     {
-        var tmpPopups = GameController.GetActivePopups();
+        var tmpPopups = GameController.GetActivePopups().Where(a => !a.name.Contains("SingleMom")).ToList();
         List<PopUpWindowManager> popups;
-        if (tmpPopups.Count <= NumberOfAutomaticClicks)
+        if (tmpPopups.Count() <= NumberOfAutomaticClicks)
         {
             popups = tmpPopups.Select(a => a.GetComponent<PopUpWindowManager>()).Reverse().ToList();
         }
         else
         {
-            popups = tmpPopups.GetRange(tmpPopups.Count - NumberOfAutomaticClicks, NumberOfAutomaticClicks).Select(a => a.GetComponent<PopUpWindowManager>()).Reverse().ToList();
+            popups = tmpPopups.GetRange(tmpPopups.Count() - NumberOfAutomaticClicks, NumberOfAutomaticClicks).Select(a => a.GetComponent<PopUpWindowManager>()).Reverse().ToList();
         }
 
         int size = popups.Count();

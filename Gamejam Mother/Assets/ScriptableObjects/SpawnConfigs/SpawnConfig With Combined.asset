@@ -9,14 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2cf37bb669ce7f2469aac524b15dc717, type: 3}
-  m_Name: SpawnConfig
+  m_Name: SpawnConfig With Combined
   m_EditorClassIdentifier: 
   TimeModels:
-  - SpawnModel: {fileID: 11400000, guid: 4e7fab6e8054268459cbf18c5a197348, type: 2}
+  - SpawnModel: {fileID: 11400000, guid: 973a45ac1a626af4f904debc8cfba556, type: 2}
     TimeToNextModel: 10
-  - SpawnModel: {fileID: 11400000, guid: f592dde8808c92a4a8be64e1bcb4aba5, type: 2}
+  - SpawnModel: {fileID: 11400000, guid: ff49d191f306573429cde2d0b93d500f, type: 2}
     TimeToNextModel: 10
-  - SpawnModel: {fileID: 11400000, guid: 363d4f9995fa5f34b8c25580caabfa0c, type: 2}
-    TimeToNextModel: 10
-  - SpawnModel: {fileID: 11400000, guid: 510f0dc2b1ce13a488e6b556181a44d9, type: 2}
+  - SpawnModel: {fileID: 11400000, guid: c1f74fdeab30f5547b5db820494a83f1, type: 2}
     TimeToNextModel: 10
