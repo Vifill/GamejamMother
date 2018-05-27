@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4339ab71165ada342b397f3cefede026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickLogic: {fileID: 11400000, guid: 7770994e0f8e805479305c2be34daaa3, type: 2}
+  ClickLogic: {fileID: 11400000, guid: 3c44a5c200ae8eb40994f1ca48bff339, type: 2}
   Prefabs: []
 --- !u!114 &114768164036234490
 MonoBehaviour:

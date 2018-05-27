@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: RandomPowerUP
   m_EditorClassIdentifier: 
   UsesCoroutine: 0
-  PotentialClickLogics: []
+  PotentialClickLogics:
+  - {fileID: 11400000}

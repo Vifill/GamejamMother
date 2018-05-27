@@ -115,19 +115,20 @@ public class PopupSpawner : MonoBehaviour
         return pSpawnModel.FirstOrDefault(a => roll <= a.ChanceOfSpawn).PopupPrefab;
     }
 
-    private void SpawnPopup(GameObject pPopupPrefab)
+    public void SpawnPopup(GameObject pPopupPrefab, bool pCountAsPopup = true)
     {
         var realPrefab = pPopupPrefab.GetComponent<PopUpWindowManager>().GetPrefab();
         Rect size = realPrefab.transform.Find("Border").GetComponent<RectTransform>().rect;
+        realPrefab.tag = pPopupPrefab.GetComponent<PopUpWindowManager>().Tag;
         realPrefab.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, size.width);
         realPrefab.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, size.height);
         var popup = Instantiate(realPrefab, PopUpSpawn);
         popup.transform.localPosition = GetSpawnLocation(size);
-        GameController.AddPopup(popup);
         AudioManager.PlaySFX(AudioManager.Sounds.BalloonSound);
+        GameController.AddPopup(popup);
     }
 
-    private Vector2 GetSpawnLocation(Rect pBorderRect)
+    public Vector2 GetSpawnLocation(Rect pBorderRect)
     {
         var backgroundRect = PopUpSpawn.rect;
 
