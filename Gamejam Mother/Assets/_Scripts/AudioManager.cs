@@ -104,6 +104,7 @@ public class AudioManager : MonoBehaviour
         DialUp,
         ErrorSound,
         BalloonSound,
-        CongratsYouWon
+        CongratsYouWon,
+        Noice
     }
 }
