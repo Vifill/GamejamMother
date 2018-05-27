@@ -27,7 +27,10 @@ public class PopUpWindowManager : MonoBehaviour
 
     private void OnClose()
     {
-        GameController.RemovePopup(gameObject);
+        if (gameObject != null)
+        {
+            GameController.RemovePopup(gameObject);
+        }
     }
 
     public void AdButtonClick()
