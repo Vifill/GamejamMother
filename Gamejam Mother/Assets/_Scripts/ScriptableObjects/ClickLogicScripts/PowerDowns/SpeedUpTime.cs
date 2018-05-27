@@ -9,6 +9,8 @@ public class SpeedUpTime : OnClickLogic
     public float SpeedUpLastTime;
     public float PitchChange;
 
+    public static float Timer;
+
     private void OnEnable()
     {
         UsesCoroutine = true;
@@ -16,15 +18,34 @@ public class SpeedUpTime : OnClickLogic
 
     public override IEnumerator RunClickCoroutine()
     {
-        SpeedTimeUp();
-        yield return new WaitForSecondsRealtime(SpeedUpLastTime);
-        Time.timeScale = 1;
+        if (Timer != 0)
+        {
+            Timer = 0;
+        }
+        else
+        {
+            SpeedTimeUp();
+            while (Timer < SpeedUpLastTime)
+            {
+                Timer += Time.deltaTime;
+                Debug.Log(Timer);
+                yield return null;
+            }
+            StopTimeSlow();
+        }
     }
 
-    public void SpeedTimeUp()
+    private void SpeedTimeUp()
     {
+        Timer = 0;
         Time.timeScale = TimeScale;
-        var audio = FindObjectOfType<AudioManager>();
-        audio.ChangeMusicPitch(SpeedUpLastTime, PitchChange);
+        FindObjectOfType<AudioManager>().ChangeMusicPitch(PitchChange);
+    }
+
+    private void StopTimeSlow()
+    {
+        Timer = 0;
+        Time.timeScale = 1;
+        FindObjectOfType<AudioManager>().ChangeMusicPitch(1);
     }
 }

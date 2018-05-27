@@ -33,13 +33,13 @@ MonoBehaviour:
     ChanceOfSpawn: 100
   - PopupPrefab: {fileID: 1903489657944838, guid: b09d8efd09e9603438c56aada928d376,
       type: 2}
-    ChanceOfSpawn: 100
+    ChanceOfSpawn: 30
   - PopupPrefab: {fileID: 1076898002398312, guid: d91b88c8fb6834142bbcd1140e05ed8c,
       type: 2}
-    ChanceOfSpawn: 100
+    ChanceOfSpawn: 30
   - PopupPrefab: {fileID: 1973604066173654, guid: 01a5872982aa68a49b6d73b224582824,
       type: 2}
-    ChanceOfSpawn: 100
+    ChanceOfSpawn: 30
   - PopupPrefab: {fileID: 1939411515090764, guid: 997b2aa8807e7ea4291482edffb305c3,
       type: 2}
     ChanceOfSpawn: 100

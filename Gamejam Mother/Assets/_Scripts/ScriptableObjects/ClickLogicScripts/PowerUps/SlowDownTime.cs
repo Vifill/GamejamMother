@@ -9,6 +9,8 @@ public class SlowDownTime : OnClickLogic
     public float SlowdownLastTime;
     public float PitchChange;
 
+    public static float Timer;
+
     private void OnEnable()
     {
         UsesCoroutine = true;
@@ -16,15 +18,34 @@ public class SlowDownTime : OnClickLogic
 
     public override IEnumerator RunClickCoroutine()
     {
-        SlowTimeDown();
-        yield return new WaitForSecondsRealtime(SlowdownLastTime);
-        Time.timeScale = 1;
+        if (Timer != 0)
+        {
+            Timer = 0;
+        }
+        else
+        {
+            SlowTimeDown();
+            while (Timer < SlowdownLastTime)
+            {
+                Timer += Time.deltaTime;
+                Debug.Log(Timer);
+                yield return null;
+            }
+            StopTimeSlow();
+        }
     }
 
-    public void SlowTimeDown()
+    private void StopTimeSlow()
     {
+        Timer = 0;
+        Time.timeScale = 1;
+        FindObjectOfType<AudioManager>().ChangeMusicPitch(1);
+    }
+
+    private void SlowTimeDown()
+    {
+        Timer = 0;
         Time.timeScale = TimeScale;
-        var audio = FindObjectOfType<AudioManager>();
-        audio.ChangeMusicPitch(SlowdownLastTime, PitchChange);
+        FindObjectOfType<AudioManager>().ChangeMusicPitch(PitchChange);
     }
 }

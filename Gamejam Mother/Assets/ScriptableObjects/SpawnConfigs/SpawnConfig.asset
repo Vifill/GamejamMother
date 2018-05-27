@@ -18,3 +18,5 @@ MonoBehaviour:
     TimeToNextModel: 10
   - SpawnModel: {fileID: 11400000, guid: 363d4f9995fa5f34b8c25580caabfa0c, type: 2}
     TimeToNextModel: 10
+  - SpawnModel: {fileID: 11400000, guid: 510f0dc2b1ce13a488e6b556181a44d9, type: 2}
+    TimeToNextModel: 10

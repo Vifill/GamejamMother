@@ -90,23 +90,9 @@ public class AudioManager : MonoBehaviour
     /// <summary>
     /// Slow down or Speed up music
     /// </summary>
-    /// <param name="pSlowTime"></param>
-    /// <param name="pPitch"></param>
-    public void ChangeMusicPitch(float pSlowTime, float pPitch)
+    public void ChangeMusicPitch(float pPitch)
     {
-        StartCoroutine(PitchMusic(pSlowTime, pPitch));
-    }
-
-    public IEnumerator PitchMusic(float pSlowTime, float pPitch)
-    {
-        float time = 0;
         MusicSource.pitch = pPitch;
-        while (time < pSlowTime)
-        {
-            time += Time.deltaTime;
-            yield return null;
-        }
-        MusicSource.pitch = 1;
     }
 
     public enum Sounds

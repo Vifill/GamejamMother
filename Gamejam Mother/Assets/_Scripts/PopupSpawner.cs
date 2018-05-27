@@ -20,8 +20,6 @@ public class PopupSpawner : MonoBehaviour
     private AudioManager AudioManager;
     private bool IsInitialized;
 
-    public List<GameObject> SpawnedPopups = new List<GameObject>();
-
     public void Initialize()
     {
         if (!IsInitialized)
