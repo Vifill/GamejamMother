@@ -25,7 +25,7 @@ public class MemoryManager : MonoBehaviour
 
         if (MemoryUsed >= 100)
         {
-            //Gamecontroller.loseGame
+            GameController.instance.LoseGame();
         }
     }
 
