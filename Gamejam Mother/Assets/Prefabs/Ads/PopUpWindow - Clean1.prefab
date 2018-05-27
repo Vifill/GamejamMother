@@ -138,6 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ClickLogic: {fileID: 11400000, guid: 2f69ff11eee590848ab5335ef19a4993, type: 2}
   Prefabs: []
+  Tag: Ad
 --- !u!114 &114235232394851642
 MonoBehaviour:
   m_ObjectHideFlags: 1

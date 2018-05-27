@@ -105,6 +105,8 @@ public class AudioManager : MonoBehaviour
         ErrorSound,
         BalloonSound,
         CongratsYouWon,
-        Noice
+        Noice,
+        Win98Error,
+        Ram
     }
 }
