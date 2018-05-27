@@ -19,6 +19,7 @@ public class PopupSpawner : MonoBehaviour
     private Image Background;
     private AudioManager AudioManager;
     private bool IsInitialized;
+    private Coroutine CurrentSpawnCoroutine;
 
     public void Initialize()
     {
@@ -56,7 +57,7 @@ public class PopupSpawner : MonoBehaviour
     public void StartGame()
     {
         StartCoroutine(SpawnModelSwitchCoroutine());
-        StartCoroutine(SpawnCoroutine());
+        CurrentSpawnCoroutine = StartCoroutine(SpawnCoroutine());
     }
 
     private IEnumerator SpawnModelSwitchCoroutine()
@@ -133,6 +134,11 @@ public class PopupSpawner : MonoBehaviour
         var backgroundRect = PopUpSpawn.rect;
         Vector2 limits = new Vector2((backgroundRect.width - pBorderRect.width)/2, (backgroundRect.height - pBorderRect.height)/2);
         return new Vector2(Random.Range(-limits.x, limits.x), Random.Range(-limits.y, limits.y));
+    }
+
+    public void StopSpawn()
+    {
+        StopCoroutine(CurrentSpawnCoroutine);
     }
 }
 

@@ -66,6 +66,7 @@ MonoBehaviour:
   - {fileID: 1336500487678554, guid: 47d093c3cb27cf44495d0c6dd2cbd3f0, type: 2}
   - {fileID: 1973604066173654, guid: 01a5872982aa68a49b6d73b224582824, type: 2}
   - {fileID: 1566882105394048, guid: 7836562a5d8c45f4c97bd7729b878d29, type: 2}
+  Tag: Moms
 --- !u!224 &224171708350967516
 RectTransform:
   m_ObjectHideFlags: 1
