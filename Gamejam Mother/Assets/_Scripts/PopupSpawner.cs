@@ -15,8 +15,6 @@ public class PopupSpawner : MonoBehaviour
     private SpawnModel CurrentSpawnModel;
     private List<PopupChanceModel> CurrentPopupChanceModels;
     private Queue<SpawnModelTimerModel> SpawnModelQueue;
-    private Canvas Canvas;
-    private Image Background;
     private AudioManager AudioManager;
     private bool IsInitialized;
 
@@ -25,9 +23,7 @@ public class PopupSpawner : MonoBehaviour
         if (!IsInitialized)
         {
             IsInitialized = true;
-            Canvas = FindObjectOfType<Canvas>();
             AudioManager = FindObjectOfType<AudioManager>();
-            Background = FindObjectOfType<Canvas>().transform.GetChild(0).GetComponent<Image>();
             SpawnModelQueue = new Queue<SpawnModelTimerModel>(SpawnModelConfig.TimeModels);
             AudioManager.StartGameAudio();
 
@@ -122,6 +118,8 @@ public class PopupSpawner : MonoBehaviour
     {
         var realPrefab = pPopupPrefab.GetComponent<PopUpWindowManager>().GetPrefab();
         Rect size = realPrefab.transform.Find("Border").GetComponent<RectTransform>().rect;
+        realPrefab.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, size.width);
+        realPrefab.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, size.height);
         var popup = Instantiate(realPrefab, PopUpSpawn);
         popup.transform.localPosition = GetSpawnLocation(size);
         GameController.AddPopup(popup);
@@ -131,7 +129,13 @@ public class PopupSpawner : MonoBehaviour
     private Vector2 GetSpawnLocation(Rect pBorderRect)
     {
         var backgroundRect = PopUpSpawn.rect;
+
         Vector2 limits = new Vector2((backgroundRect.width - pBorderRect.width)/2, (backgroundRect.height - pBorderRect.height)/2);
+        //return new Vector2(-limits.x, -limits.y);
+        //return new Vector2(limits.x, limits.y);
+        //return new Vector2(limits.x, 0);
+        //return new Vector2(0, limits.y);
+
         return new Vector2(Random.Range(-limits.x, limits.x), Random.Range(-limits.y, limits.y));
     }
 }
