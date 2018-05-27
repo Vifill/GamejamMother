@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114153885094208148}
   m_Layer: 5
   m_Name: PopUpWindow - YouWon9
-  m_TagString: Untagged
+  m_TagString: Ad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -343,6 +343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ClickLogic: {fileID: 11400000, guid: 3c44a5c200ae8eb40994f1ca48bff339, type: 2}
   Prefabs: []
+  Tag: 
 --- !u!114 &114854310401801444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -547,7 +548,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 808, y: 815}
+  m_SizeDelta: {x: 808, y: 817}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!224 &224779766880295798
 RectTransform:
@@ -564,6 +565,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 3}
+  m_AnchoredPosition: {x: 0, y: 2}
   m_SizeDelta: {x: 800, y: 774}
   m_Pivot: {x: 0.5, y: 0}

@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114275795002100224}
   - component: {fileID: 114931151775193898}
   - component: {fileID: 114379221041065742}
+  - component: {fileID: 114304788964257514}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -54,9 +55,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63831d4b5874b6b49aa1f4843f9f6169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnModelConfig: {fileID: 11400000, guid: 416e4b1958a4c3b4795a741ba9ca80fa, type: 2}
+  SpawnModelConfig: {fileID: 11400000, guid: 0b83484220cebd345b04a13f1a9dc605, type: 2}
   InitialSpawnConfig:
-    InitialSpawnModel: {fileID: 11400000, guid: 4e7fab6e8054268459cbf18c5a197348,
+    InitialSpawnModel: {fileID: 11400000, guid: 973a45ac1a626af4f904debc8cfba556,
       type: 2}
     NumberOfInitialPopups: 50
     RateOfSpawn: 0.05
@@ -70,6 +71,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfc1dbfdeac2bfa41a3148c8a663338c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114304788964257514
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1846812275298344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19eaf3c32694db349a125b11cb79dbe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114379221041065742
@@ -94,4 +106,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe691366437fdf242a5d50014f87b206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EndScreenPrefab: {fileID: 0}
+  EndScreenPrefab: {fileID: 1523540876247916, guid: b40c39b0d855f1e478628bb523a04053,
+    type: 2}

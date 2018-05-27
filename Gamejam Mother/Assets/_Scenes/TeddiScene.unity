@@ -987,18 +987,6 @@ Prefab:
       propertyPath: PopUpSpawn
       value: 
       objectReference: {fileID: 1535456079}
-    - target: {fileID: 114228484897754414, guid: b0aea385cc6f17f4ba7b1811a11a07bf,
-        type: 2}
-      propertyPath: SpawnModelConfig
-      value: 
-      objectReference: {fileID: 11400000, guid: 0b83484220cebd345b04a13f1a9dc605,
-        type: 2}
-    - target: {fileID: 114228484897754414, guid: b0aea385cc6f17f4ba7b1811a11a07bf,
-        type: 2}
-      propertyPath: InitialSpawnConfig.InitialSpawnModel
-      value: 
-      objectReference: {fileID: 11400000, guid: 973a45ac1a626af4f904debc8cfba556,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0aea385cc6f17f4ba7b1811a11a07bf, type: 2}
   m_IsPrefabParent: 0
